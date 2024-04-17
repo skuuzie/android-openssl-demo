@@ -43,8 +43,8 @@ class MainActivity : AppCompatActivity() {
 
         override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
             val md5 = CryptoHash().hash(OpensslHash(), Crypto.HashAlgorithm.MD5, s.toString())
-            val sha1 = OpensslHash().hash(Crypto.HashAlgorithm.SHA1, s.toString().toByteArray())
-            val sha256 = OpensslHash().hash(Crypto.HashAlgorithm.SHA256, s.toString().toByteArray())
+            val sha1 = CryptoHash().hash(OpensslHash(), Crypto.HashAlgorithm.SHA1, s.toString())
+            val sha256 = CryptoHash().hash(OpensslHash(), Crypto.HashAlgorithm.SHA256, s.toString())
 
             with (binding) {
                 resultMd5.setText(md5 ?: "Some error happened in c++ side.")
