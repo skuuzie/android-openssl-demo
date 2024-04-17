@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Openssl Demo</string>
+    <string name="sha_256">SHA-256</string>
+    <string name="sha_1">SHA-1</string>
+    <string name="md5">MD5</string>
+    <string name="result">Result</string>
+    <string name="any_text_here">Any text here</string>
+    <string name="input">Input</string>
+</resources>
