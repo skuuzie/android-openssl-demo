@@ -11,7 +11,7 @@ Tested features:
 perfomance & obscurity. frankly, try to use native code whenever possible for sensitive operations 😃
 
 ### reproduction steps
-1. build the static libraries first and put to `/app/src/cpp/prebuilt` for each ABI (see `openssl_build`)
+1. build the static libraries first and put to `/app/src/main/cpp/prebuilt` for each ABI (see `openssl_build`)
 2. open project in Android Studio
 3. run & voila
 
