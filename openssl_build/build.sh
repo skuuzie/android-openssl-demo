@@ -26,9 +26,7 @@ build() {
 	make
 
 	mv libcrypto.a $ROOT_DIR/$OUTPUT_DIR
-	mv libcrypto.so $ROOT_DIR/$OUTPUT_DIR
 	mv libssl.a $ROOT_DIR/$OUTPUT_DIR
-	mv libssl.so $ROOT_DIR/$OUTPUT_DIR
 }
 
 build "android-x86" "24"
